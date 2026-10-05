@@ -166,6 +166,18 @@ h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; }
 .card h3 { margin: 0 0 0.6rem; font-size: 1.2rem; }
 .card p { margin: 0; color: var(--muted); }
 
+/* PARTICIPATION */
+.part-list { list-style: none; padding: 0; margin: 0; }
+.part-list li {
+  padding: 0.7rem 0; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 0.95rem; line-height: 1.5;
+}
+.part-list li:first-child { border-top: none; padding-top: 0; }
+.part-list li span {
+  display: inline-block; min-width: 92px; margin-right: 0.3rem;
+  color: var(--accent); font-weight: 700; font-size: 0.82rem;
+}
+
 /* PUBLICATIONS */
 .filter-bar { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.75rem 0 1.5rem; }
 .filter-chip {
