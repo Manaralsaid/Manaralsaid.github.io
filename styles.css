@@ -110,10 +110,13 @@ h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; }
   background: var(--card); box-shadow: var(--shadow); text-align: center;
 }
 .avatar {
-  width: 118px; height: 118px; margin: 0 auto 1.25rem; display: grid; place-items: center;
+  width: 132px; height: 132px; margin: 0 auto 1.25rem; overflow: hidden;
   border-radius: 50%; background: linear-gradient(135deg, #0b5cab, #102a43);
-  color: #fff; font-size: 2.1rem; font-weight: 800; letter-spacing: 0.08em;
-  font-family: "Source Serif 4", serif;
+  border: 3px solid var(--card); box-shadow: 0 0 0 1px var(--line), var(--shadow-sm);
+}
+.avatar img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 25%;
+  display: block;
 }
 .profile-card h1 { margin: 0; font-size: 1.7rem; line-height: 1.2; }
 .role { color: var(--accent); font-weight: 700; margin: 0.35rem 0 0.5rem; }
